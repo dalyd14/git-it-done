@@ -105,9 +105,8 @@ var getFeaturedRepos = function(language) {
 var buttonClickHandler = function(event) {
     var language = event.target.getAttribute("data-language")
     if (language) {
-        getFeaturedRepos(language)
-
         repoContainerEl.textContent = ""
+        getFeaturedRepos(language)        
     }
 }
 
